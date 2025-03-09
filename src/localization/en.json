@@ -1,0 +1,41 @@
+{
+  "logoTitle": "Farmer Market",
+  "login": "Login",
+  "email": "Email",
+  "emailPalceholder": "Enter your email",
+  "password": "Password",
+  "passwordPlaceholder": "Enter your password",
+  "rememberMe": "Remember Me",
+  "forgotPassword": "Forgot Password?",
+  "noAccount": "Don't have account?",
+  "register": "Register",
+  "vendorName": "Vendor Name",
+  "vendorNamePlaceholder": "Enter vendor name",
+  "phone": "Phone",
+  "storeName": "Store Name",
+  "storePlaceholder": "Enter store name",
+  "confirmPassword": "Confirm Password",
+  "haveAccount": "Already have account?",
+  "createAccount": "Create Account",
+  "Home": "Home",
+  "Categories": "Categories",
+  "Brands": "Brands",
+  "Products": "Products",
+  "Orders": "Orders",
+  "Clients": "Clients",
+  "Reports": "Reports",
+  "FAQs": "FAQs",
+  "Complains": "Complains",
+  "Admin": "Admin",
+
+  "auth": {
+    "loginAdmin": "Login (Admin)"
+  },
+  "landing": {
+    "features": "features",
+    "blog": "blog",
+    "contact": "contact",
+    "prices": "prices",
+    "getStarted": "Get started by connecting to booking"
+  }
+}

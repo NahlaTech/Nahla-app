@@ -1,0 +1,42 @@
+:root,
+#root {
+  --primary: #194973;
+  --secondary: #bf452a;
+  --helper: #8c5c4a;
+  --light: #f2f2f2;
+  --dark: #262626;
+  --primary-color: var(--primary) !important;
+  --secondary-color: var(--secondary) !important;
+}
+
+#root {
+  height: 100%;
+}
+
+.color-primary {
+  color: var(--primary) !important;
+}
+
+.color-secondary {
+  color: var(--secondary) !important;
+}
+
+.color-helper {
+  color: var(--helper) !important;
+}
+
+.background-primary {
+  background-color: var(--primary);
+}
+
+.background-secondary {
+  background-color: var(--secondary);
+}
+
+.background-thirdary {
+  background-color: var(--helper);
+}
+
+.p-component {
+  font-family: almarai, sans-serif;
+}

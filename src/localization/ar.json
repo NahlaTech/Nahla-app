@@ -1,0 +1,372 @@
+{
+  "logoTitle": "نحلة",
+  "login": "تسجيل الدخول",
+  "email": "البريد الإلكتروني",
+  "emailPalceholder": "ادخل البريد الإلكتروني",
+  "password": "كلمة المرور",
+  "passwordPlaceholder": "ادخل كلمة المرور",
+  "rememberMe": "تذكرني",
+  "forgotPassword": "نسيت كلمة المرور؟",
+  "noAccount": "ليس لديك حساب؟",
+  "register": "مستخدم جديد",
+  "vendorName": "اسم التاجر",
+  "vendorNamePlaceholder": "ادخل الاسم بالكامل",
+  "phone": "الجوال",
+  "storeName": "اسم المتجر",
+  "storePlaceholder": "ادخل اسم المتجر",
+  "confirmPassword": "تأكيد كلمة المرور",
+  "haveAccount": "بالفعل لديك حساب؟",
+  "createAccount": "إنشاء حساب",
+  "Home": "الرئيسية",
+  "Categories": "الاقسام",
+  "Brands": "العلامات التجارية",
+  "Products": "المنتجات",
+  "Orders": "الطلبات",
+  "Clients": "العملاء",
+  "Reports": "التقارير",
+  "FAQs": "الأسئلة والتقييمات",
+  "Complains": "الشكاوى",
+  "Admin": "مدير المتجر",
+  "addNewCategories": "اضافة قسم جديد",
+  "searchByCategoryName": "ابحث برقم القسم او اسم القسم",
+  "add": "اضافة",
+
+  "main": {
+    "name": "الاسم",
+    "image": "الصورة",
+    "status": "الحالة",
+    "active": "فعال",
+    "inactive": "غير فعال",
+    "created_at": "تاريخ الإنشاء",
+
+    "create": "إضافة",
+    "update": "تعديل",
+    "save": "حفظ",
+    "saveChanges": "حفظ التغيرات",
+    "activate": "تفعيل",
+    "search": "بحـث",
+    "send": "إرسال",
+    "cancel": "إلغاء",
+    "thereAreNoData": "عفوا، لا يوجد بيانات",
+
+    "phone": "الجوال",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "chooseFile": "تصفح جهازك لرفع ملف"
+  },
+  "dialog": {
+    "areYouSureYouWantToProceed": "هل انت متأكد انك تريد المتابعة؟",
+    "confirmation": "تأكيد",
+    "doYouWantToDeleteThisItem": "هل تريد حذف هذا العنصر؟",
+    "confirmationDelete": "تأكيد الحذف",
+    "yes": "نعم",
+    "no": "لا"
+  },
+  "socialMedia": {
+    "instagram": "انستغرام",
+    "twitter": "تويتر",
+    "facebook": "فيسبوك",
+    "whatsapp": "واتس اب",
+    "snapchat": "سناب شات"
+  },
+  "status": {
+    "pending": "قيد الانتظار",
+    "approved": "موافقة",
+    "rejected": "مرفوض"
+  },
+
+  "auth": {
+    "loginAdmin": "تسجيل الدخول (أدمن)",
+    "logout": "تسجيل الخروج"
+  },
+  "languages": {
+    "languages": "اللغات",
+    "language": "اللغة",
+
+    "create": "إضافة لغة",
+    "update": "تعديل اللغة",
+    "delete": "حذف اللغة",
+    "activate": "تفعيل اللغات",
+
+    "image": "علم الدولة",
+    "locale": "الاسم المختصر"
+  },
+  "admins": {
+    "admins": "المسئولين",
+    "admin": "المسئول",
+
+    "create": "إضافة مسئول",
+    "update": "تعديل المسئول",
+    "delete": "حذف المسئول",
+
+    "image": "صورة المسئول",
+    "name": "اسم المسئول"
+  },
+  "brands": {
+    "brands": "العلامات التجارية",
+    "brand": "العلامة التجارية",
+
+    "create": "إضافة علامة تجارية",
+    "update": "تعديل العلامة التجارية",
+    "delete": "حذف العلامة التجارية",
+
+    "image": "صورة العلامة التجارية",
+    "name": "اسم العلامة التجارية"
+  },
+  "shipments": {
+    "shipments": "شركات الشحن",
+    "shipment": "شركة الشحن",
+
+    "create": "إضافة شركة شحن",
+    "update": "تعديل شركة الشحن",
+    "delete": "حذف شركة الشحن",
+
+    "name": "اسم شركة الشحن",
+    "desc": "وصف شركة الشحن"
+  },
+  "complaintCategories": {
+    "complaintCategories": "أقسام الشكاوي",
+    "complaintCategory": "القسم",
+
+    "create": "إضافة قسم",
+    "update": "تعديل القسم",
+    "delete": "حذف القسم",
+
+    "name": "اسم القسم",
+    "type": "نوع القسم",
+    "type_customer": "عميل",
+    "type_store": "متجر"
+  },
+  "complaints": {
+    "complaints": "الشكاوي",
+    "complaint": "الشكوى",
+    "create": "إضافة شكوى",
+    "changeStatus": "تغيير حالة الشكوى",
+    "details": "تفاصيل الشكوى",
+    "back": "< الرجوع إلى الشكاوي",
+
+    "admin": "المسؤول",
+    "replay": "الرد",
+    "sendReplay": "إرسل رد",
+    "title": "عنوان الشكوى",
+    "description": "وصف الشكوى",
+    "date": "تاريخ الشكوى",
+    "status": "حالة الشكوى",
+    "priority": "أولوية الشكوى",
+    "image": "صورة الشكوى",
+    "user": "مقدم الشكوى",
+    "type": {
+      "customer": "عميل",
+      "vendor": "تاجر",
+      "admin": "مسؤول"
+    },
+    "statuses": {
+      "new": "جديدة",
+      "pending": "معلقة",
+      "processing": "جاري المعالجة",
+      "stuff_reply": "تم الرد (مسؤول)",
+      "vendor_reply": "تم الرد (تاجر)",
+      "customer_reply": "تم الرد (عميل)",
+      "closed": "مغلقة"
+    },
+    "priorities": {
+      "normal": "طبيعي",
+      "medium": "متوسط",
+      "high": "مرتفع"
+    }
+  },
+  "paymentTypes": {
+    "paymentTypes": "أنواع الدفع",
+    "paymentType": "نوع الدفع",
+
+    "create": "إضافة نوع دفع",
+    "update": "تعديل نوع الدفع",
+    "delete": "حذف نوع الدفع",
+
+    "name": "اسم نوع الدفع",
+    "desc": "وصف نوع الدفع"
+  },
+  "paymentMethods": {
+    "paymentMethods": "طرق الدفع",
+    "paymentMethod": "طريقة الدفع",
+
+    "create": "إضافة طريقة دفع",
+    "update": "تعديل طريقة الدفع",
+    "delete": "حذف طريقة الدفع",
+
+    "name": "اسم طريقة الدفع",
+    "desc": "وصف طريقة الدفع",
+    "status": "حالة طريقة الدفع",
+
+    "config": {
+      "URWAY_PASSWORD": "كلمة مرور (URWAY_PASSWORD)",
+      "URWAY_TERMINAL_ID": "المعرف (URWAY_TERMINAL_ID)",
+      "URWAY_MERCHANT_KEY": "مفتاح التاجر (URWAY_MERCHANT_KEY)"
+    }
+  },
+  "stores": {
+    "stores": "المتاجر",
+    "store": "المتجر",
+    "update": "تعديل المتجر",
+    "delete": "حذف المتجر",
+    "changeStatus": "تغيير حالة المتجر",
+    "updateDomain": "تعديل الدومين",
+
+    "logo": "لوجو المتجر",
+    "name": "اسم المتجر",
+    "desc": "وصف المتجر",
+    "commercialRegistration": "السجل التجاري",
+    "location": "العنوان",
+    "status": "حالة المتجر",
+    "domain": "الدومين"
+  },
+  "tags": {
+    "tags": "الوسوم",
+    "tag": "الوسم",
+
+    "create": "إضافة وسم",
+    "update": "تعديل الوسم",
+    "delete": "حذف الوسم",
+
+    "name": "اسم الوسم"
+  },
+  "attributes": {
+    "attributes": "الخصائص",
+    "attribute": "الخاصية",
+
+    "create": "إضافة خاصية",
+    "update": "تعديل الخاصية",
+    "delete": "حذف الخاصية",
+
+    "name": "اسم الخاصية"
+  },
+  "products": {
+    "products": "المنتجات",
+    "product": "المنتج",
+
+    "create": "إضافة منتج",
+    "update": "تعديل المنتج",
+    "delete": "حذف المنتج",
+    "back": "< الرجوع إلى المنتجات",
+
+    "image": "صورة المنتج",
+    "name": "اسم المنتج",
+    "desc": "وصف المنتج",
+    "price": "سعر المنتج",
+    "quantity": "كمية المنتج",
+    "model": "موديل المنتج",
+    "sku": "رمز التخزين SKU",
+    "minimum": "أقصى كمية لكل عميل",
+    "weight": "وزن المنتج (gm)",
+    "length": "طول المنتج (cm)",
+    "width": "عرض المنتج (cm)",
+    "height": "إرتفاع المنتج (cm)",
+    "sort_order": "ترتيب الطلب",
+    "shipping": "الشحن",
+    "subtract": "قابل لنقصان الكمية"
+  },
+
+  "category": {
+    "category": "القسم",
+    "categoryId": "رقم القسم",
+    "categoryImage": "صورة  القسم",
+    "categoryName": "اسم القسم",
+    "categoryNamear": "اسم القسم (العربية)",
+    "categoryNameen": "اسم القسم (الإنجليزية)",
+    "categoryNamefr": "اسم القسم (الفرنسية)",
+    "parentCategoryName": "القسم الرئيسي",
+    "status": "حالة القسم",
+    "editCategory": "تعديل القسم",
+    "activateDepartment": "تفعيل حالة القسم",
+    "deactivateDepartment": "الغاء تفعيل القسم",
+    "deleteDepartment": "حذف القسم",
+    "addNewCategory": "إضافة قسم جديد",
+    "chooseFile": "تصفح جهازك لرفع صورة",
+    "subCategory": "قسم فرعي",
+    "chooseCategory": "اختر القسم"
+  },
+
+  "order": {
+    "number": "رقم الطلب",
+    "addNewOrder": "",
+    "back": "< الرجوع إلى الطلبات",
+    "order": "الطلب",
+    "pending": "قيد التنفيذ",
+    "riyal": "ريال",
+    "paymentMethod": "طريقة الدفع",
+    "card": "البطاقة الائتمانية",
+    "cash": "كاش",
+    "id": "المعاملة",
+    "customer": "العميل",
+    "summary": "ملخص الطلب",
+    "print": "طباعة",
+    "subtotal": "المجموع الفرعي",
+    "shipping": "الشحن",
+    "total": "المجموع",
+    "history": "سجل الطلب",
+    "confirmed": "تم تأكيد الطلب",
+    "shipped": "جاري الشحن",
+    "delivered": "تم التوصيل ",
+    "date": "تاريخ الطلب",
+    "status": "حالة الطلب",
+    "editStatus": "تعديل حالة الطلب"
+  },
+
+  "customer": {
+    "customers": "العملاء",
+    "searchCustomers": "ابحث برقم العميل او الفئة",
+    "allClients": "جميع العملاء",
+    "mostValuableCustomer": "العملاء الأكثر شرائاً",
+    "vipClients": "عملاء أصحاب ولاء مرتفع",
+    "name": "اسم العميل",
+    "category": "الفئة",
+    "city": "المدينة",
+    "firstName": "الاسم الاول",
+    "lastName": "الاسم الثاني",
+    "delete": "حذف العميل"
+  },
+  "permissions": {
+    "roles": "الادوار",
+    "roleName": "اسم الدور",
+    "editRole": "تعديل الدور",
+    "back": "الرجوع للادوار",
+    "addRole": "اضافة دور"
+  },
+  "pages": {
+    "pages": "الصفحات التعريفية",
+    "add": "إضافة صفحة جديدة",
+    "name": "اسم الصفحة",
+    "url": "رابط الصفحة",
+    "type": "نوع الصفحة",
+    "choose": "اختر نوع الصفحة",
+    "edit": "تعديل الصفحة",
+    "delete": "مسح الصفحة"
+  },
+  "landing": {
+    "firstHeroTitle": "نحلة - الحل الذكي لإدارة متميزة ..",
+    "firstHeroDescription": "نحلة هو نظام متكامل يساعدك على إدارة الشقق الخدمية والوحدات الفندقية وتحقيق ارباح مرضية وملموسة. نوفر لك الأدوات اللازمة لتنظيم الحجوزات، التواصل مع النزلاء، تحصيل المدفوعات، وتحسين تجربة الإقامة ، يمكنك تنمية أعمالك بثقة والاستفادة من التشغيل التلقائي لتوفير الوقت والجهد.",
+    "createYourAppNow": "أنشئ متجرك الإلكتروني",
+    "secondHeroTitle": "متجرك، على ذوقك",
+    "thirdHeroTitle": "حوّل متجرك الإلكتروني إلى تطبيق جوال",
+    "store": "متجر إلكتروني",
+    "callCenter": "دعم فني",
+    "revenue": "مبيعات المنصة",
+    "about": "من نحن",
+    "yourStore": "متجرك، على ذوقك",
+    "yourStoreDesc": "نجاحك التجاري يحتاج لمظهر أنيق، اختر مظهرًا يناسب علامتك.",
+    "li1": "مكتبة متنوعة من الثيمات الجاهزة القابلة للتخصيص حسب رغبتك.",
+    "li2": "تخصيص تفاصيل التصميم عن طريق JS و CSS",
+    "li3": "كما يمكنك صنع ثيمك الخاص.",
+    "convertStore": "حوّل متجرك الإلكتروني إلى تطبيق جوال",
+    "li4": "سرعة الطلب من المتجر بواسطة التطبيق.",
+    "li5": "إرسال إشعارات وتنبيهات للسلات المتروكة بالتطبيق.",
+    "li6": "تخصيص كوبانات لتطبيق الجوال.",
+    "createYourMobAppNow": "أنشئ تطبيقك الآن",
+    "copyrights": "جميع الحقوق محفوظة",
+    "features": "مميزات",
+    "blog": "المدونة",
+    "prices": "الأسعار",
+    "contact": "تواصل معنا",
+    "getStarted": "سجل الان و اعرض عقارك في Booking و Airbnb"
+  }
+}
