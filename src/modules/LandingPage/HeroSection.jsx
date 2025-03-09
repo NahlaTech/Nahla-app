@@ -2,9 +2,15 @@ import { Button } from 'primereact/button';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { HomelaptopHero } from '../../assets/assets';
+import img4 from '../../images/airbnb.png';
+import img2 from '../../images/book.png';
+import img1 from '../../images/google.png';
+import img3 from '../../images/verboo.png';
+import './HeroSection.css';
 
 export default function HeroSection() {
   const { t } = useTranslation();
+  console.log(t);
   return (
     <section className="mb-8">
       <div className="flex">
@@ -28,6 +34,23 @@ export default function HeroSection() {
             src={HomelaptopHero}
             alt="laptop picture as a hero photo"
           />
+        </div>
+      </div>
+
+      <div className="container">
+        <div class="grid mt-8">
+          <div class="col-3 flex justify-content-center">
+            <img src={img1} w-full height={75} />
+          </div>
+          <div class="col-3 flex justify-content-center">
+            <img src={img2} w-full height={75} />
+          </div>
+          <div class="col-3 flex justify-content-center">
+            <img src={img3} w-full height={75} />
+          </div>
+          <div class="col-3 flex justify-content-center">
+            <img src={img4} w-full height={75} />
+          </div>
         </div>
       </div>
     </section>
