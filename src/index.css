@@ -1,7 +1,16 @@
 html,
 body {
-  height: 100%;
+  /* height: 100%; */
   padding: 0;
   margin: 0;
   font-family: almarai, sans-serif;
+}
+
+#root {
+  width: 100%;
+  max-width: 100vw; /* Ensures the width never exceeds the viewport width */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100vh;
 }

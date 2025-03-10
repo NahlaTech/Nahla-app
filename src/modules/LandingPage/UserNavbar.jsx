@@ -6,11 +6,11 @@ export default function UserNavbar() {
   const { t } = useTranslation();
 
   return (
-    <nav className="flex align-items-center justify-content-between mb-7">
+    <nav className="flex align-items-center justify-content-between mb-7 ">
       <div className="font-bold ml-2 pl-6 py-3 text-primary text-5xl">
         {t('logoTitle')}
       </div>
-      <div className='className="flex-1 flex align-items-center justify-content-center font-bold pr-4 py-3 border-round"'>
+      <div className="flex-1 flex align-items-center justify-content-center font-bold pr-4 py-3 border-round sm:hidden md:flex lg:flex lx:flex">
         <ul className="flex list-none gap-5">
           <li>
             <NavLink
@@ -74,7 +74,7 @@ export default function UserNavbar() {
           </li>
         </ul>
       </div>
-      <div className="font-bold pr-6 py-3 border-round flex gap-3">
+      <div className="font-bold pr-6 py-3 border-round md:flex gap-3 sm:hidden ">
         <Link to="/">
           <Button
             label={t('login')}
