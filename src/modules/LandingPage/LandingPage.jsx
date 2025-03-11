@@ -1,6 +1,7 @@
 import UserNavbar from './UserNavbar';
 import HeroSection from './HeroSection';
 import Features from './Features/Features';
+import Pricing from './Pricing';
 
 export default function LandingPage() {
   return (
@@ -9,6 +10,7 @@ export default function LandingPage() {
         <UserNavbar />
         <HeroSection />
         <Features />
+        <Pricing />
       </div>
     </>
   );

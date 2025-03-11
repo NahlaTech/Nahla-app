@@ -385,6 +385,32 @@
     "fiveFeaturesPoint": "التكامل مع العديد من التطبيقات لمساعدتك في تنمية أعمالك.",
     "cardsTitle": "نحن نعتمد على أفضل الشركات في الصناعة",
     "thirdFeaturesTitle": "تشغيل تلقائي يوفر وقتك وجهدك",
-    "thirdFeaturesSubTitle": "استرخِ ودع نحلة يتولى العمل عنك!"
+    "thirdFeaturesSubTitle": "استرخِ ودع نحلة يتولى العمل عنك!",
+
+    "pricingTitle": "خطط الأسعار",
+    "pricingDescription": "اختر الخطة المثالية التي تناسب احتياجاتك واستمتع بجميع الميزات والفوائد التي نقدمها.",
+
+    "pricingSectionOneTitle": "الشركة الناشئة",
+    "pricingSectionOneDesc": "احصل على كل ما تحتاجه لتنمية أعمالك بمرونة وكفاءة، مع حلول متكاملة تعزز الإنتاجية.",
+    "firstPricingSectionOnePoint": "سجل بيانات غير محدود",
+    "secondPricingSectionOnePoint": "تقارير أساسية متكاملة، بما في ذلك Flows",
+    "thirdPricingSectionOnePoint": "قاموس بيانات متاح",
+    "fourPricingSectionOnePoint": "تنبيهات وإشعارات فورية",
+
+    "pricingSectionTwoTitle": "خطة النمو",
+    "pricingSectionTwoDesc": "نقدم لك حلولًا متكاملة تساعدك على تحسين الأداء وتطوير أعمالك بكفاءة.",
+    "firstPricingSectionTwoPoint": "توثيق كامل للخدمة",
+    "secondPricingSectionTwoPoint": "مواد عمل متوفرة في Figma",
+    "thirdPricingSectionTwoPoint": "100 جيجابايت من التخزين السحابي",
+    "fourPricingSectionTwoPoint": "دعم حتى 500 عضو بالفريق",
+
+    "pricingSectionThreeTitle": "الخطة المتقدمة",
+    "pricingSectionThreeDesc": "حل متكامل للشركات الكبيرة مع ميزات متطورة لدعم أعمالك وتنميتها.",
+    "firstPricingSectionThreePoint": "توثيق كامل للخدمة",
+    "secondPricingSectionThreePoint": "مواد عمل متوفرة في Figma",
+    "thirdPricingSectionThreePoint": "100 جيجابايت من التخزين السحابي",
+    "fourPricingSectionThreePoint": "دعم حتى 500 عضو بالفريق",
+    "monthly": "شهرياً",
+    "startNow": " ابدأ الآن"
   }
 }

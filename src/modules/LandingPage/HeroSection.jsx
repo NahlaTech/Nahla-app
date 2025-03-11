@@ -10,21 +10,21 @@ import './HeroSection.css';
 
 export default function HeroSection() {
   const { t } = useTranslation();
-  console.log(t);
+
   return (
-    <section className="mb-8">
+    <section className="mb-8 mt-7">
       <div className="md:flex">
         <div className="mt-5 sm:pl-0 md:pl-8 md:w-12">
           <h2 className="text-5xl text-blackBold m-0">
             {t('landing.firstHeroTitle')}
           </h2>
-          <p className="min-w-8 textGray  line-height-4 text-lg text-wrap break-words py-3 mt-0 text-500">
+          <p className="min-w-8  line-height-4 text-lg text-wrap break-words py-3 mt-0 md:text-base lg:text-lg text-500">
             {t('landing.firstHeroDescription')}
           </p>
           <Link to="/" className="no-underline block w-full">
             <Button
               label={t('landing.getStarted')}
-              className="p-button-secondary border-primary bg-primary text-primary px-6"
+              className="md:text-base lg:text-lg p-button-secondary border-primary bg-primary text-primary  px-6"
             />
           </Link>
         </div>
