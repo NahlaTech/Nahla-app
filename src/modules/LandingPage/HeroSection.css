@@ -1,19 +1,21 @@
 .cards-container {
   width: 90%;
-  margin: 0px auto;
+  margin: 85px auto;
+  background-color: rgb(25, 73, 115, 0.05);
+  padding: 50px 0 50px 0;
+  border-radius: 25px;
 }
 .p-image-shadow {
-  box-shadow: 0px 4px 10px rgba(200, 200, 200, 0.5);
+  /* box-shadow: 0px 4px 10px rgba(200, 200, 200, 0.5); */
   border-radius: 8px;
   transition:
-    box-shadow 0.4s ease-in-out,
-    transform 0.4s ease-in-out;
+    /* box-shadow 0.4s ease-in-out, */ transform 0.4s ease-in-out;
 
   transform: all 0.6;
 }
 
 .p-image-shadow:hover {
-  box-shadow: 0px 6px 15px rgba(200, 200, 200, 0.7); /* Lighter shadow */
+  /* box-shadow: 0px 6px 15px rgba(200, 200, 200, 0.7);  */
   transform: scale(1.05); /* Slight zoom effect */
 }
 

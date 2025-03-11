@@ -38,26 +38,29 @@ export default function HeroSection() {
       </div>
 
       <div className="cards-container">
-        <div class="grid mt-8">
+        <h2 className="text-3xl text-blackBold m-0 text-center">
+          {t('landing.cardsTitle')}
+        </h2>
+        <div class="grid mt-6">
           <div class="sm:col-12 md:col-6 lg:col-3 sm:mb-4 md:mb-0 flex justify-content-center">
             {/* shadow-3 border-round surface-card hover:shadow-lg hover:shadow-red-200 transition-all duration-30 */}
             <img
               src={img1}
-              className="w-7 h-[75px] p-image-shadow "
+              className="w-8 h-[75px] p-image-shadow "
               alt="img1"
             />
           </div>
           <div class="sm:col-12 md:col-6 lg:col-3  sm:mb-4 md:mb-0 flex justify-content-center">
             <img
               src={img2}
-              className="w-7 h-[75px]  p-image-shadow"
+              className="w-8 h-[75px]  p-image-shadow"
               alt="img2"
             />
           </div>
           <div class="sm:col-12 md:col-6 lg:col-3  sm:mb-4 md:mb-0  flex justify-content-center">
             <img
               src={img3}
-              className="w-7 h-[75px]  p-image-shadow"
+              className="w-8 h-[75px]  p-image-shadow"
               alt="img3"
             />
           </div>
