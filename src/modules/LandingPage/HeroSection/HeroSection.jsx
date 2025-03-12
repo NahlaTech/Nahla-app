@@ -1,11 +1,11 @@
 import { Button } from 'primereact/button';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { HomelaptopHero } from '../../assets/assets';
-import img4 from '../../assets/airbnb.png';
-import img2 from '../../assets/booking.png';
-import img1 from '../../assets/google.png';
-import img3 from '../../assets/verbo.png';
+import { HomelaptopHero } from '../../../assets/assets';
+import img4 from '../../../assets/airbnb.png';
+import img2 from '../../../assets/booking.png';
+import img1 from '../../../assets/google.png';
+import img3 from '../../../assets/verbo.png';
 import './HeroSection.css';
 
 export default function HeroSection() {
@@ -24,11 +24,11 @@ export default function HeroSection() {
           <Link to="/" className="no-underline block w-full">
             <Button
               label={t('landing.getStarted')}
-              className="md:text-base lg:text-lg p-button-secondary border-primary bg-primary text-primary  px-6"
+              className="md:text-base lg:text-lg p-button-secondary border-primary bg-primary  text-white  px-6"
             />
           </Link>
         </div>
-        <div className=" sm:hidden md:block md:w-7 ">
+        <div className=" hidden md:block md:w-7 ">
           <img
             className="w-full pt-5 "
             src={HomelaptopHero}
@@ -42,32 +42,32 @@ export default function HeroSection() {
           {t('landing.cardsTitle')}
         </h2>
         <div class="grid mt-6">
-          <div class="sm:col-12 md:col-6 lg:col-3 sm:mb-4 md:mb-0 flex justify-content-center">
+          <div class="col-12 md:col-6 lg:col-3 sm:mb-4 md:mb-0 flex justify-content-center">
             {/* shadow-3 border-round surface-card hover:shadow-lg hover:shadow-red-200 transition-all duration-30 */}
             <img
               src={img1}
-              className="w-8 h-[75px] p-image-shadow "
+              className="w-5 md:w-8 h-[75px] p-image-shadow "
               alt="img1"
             />
           </div>
-          <div class="sm:col-12 md:col-6 lg:col-3  sm:mb-4 md:mb-0 flex justify-content-center">
+          <div class="col-12 md:col-6 lg:col-3  sm:mb-4 md:mb-0 flex justify-content-center">
             <img
               src={img2}
-              className="w-8 h-[75px]  p-image-shadow"
+              className="w-5 md:w-8 h-[75px]  p-image-shadow"
               alt="img2"
             />
           </div>
-          <div class="sm:col-12 md:col-6 lg:col-3  sm:mb-4 md:mb-0  flex justify-content-center">
+          <div class="col-12 md:col-6 lg:col-3  sm:mb-4 md:mb-0  flex justify-content-center">
             <img
               src={img3}
-              className="w-8 h-[75px]  p-image-shadow"
+              className="w-5 md:w-8 h-[75px]  p-image-shadow"
               alt="img3"
             />
           </div>
-          <div class="sm:col-12 md:col-6 lg:col-3 sm:mb-4 md:mb-0  flex justify-content-center">
+          <div class="col-12 md:col-6 lg:col-3 sm:mb-4 md:mb-0  flex justify-content-center">
             <img
               src={img4}
-              className="w-7 h-[75px]  p-image-shadow"
+              className="w-5 md:w-8 h-[75px]  p-image-shadow"
               alt="img4"
             />
           </div>

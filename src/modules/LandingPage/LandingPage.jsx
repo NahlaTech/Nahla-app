@@ -1,5 +1,5 @@
-import HeroSection from './HeroSection';
-import Pricing from './Pricing';
+import HeroSection from './HeroSection/HeroSection';
+import Pricing from './Pricing/Pricing';
 import { useRef } from 'react';
 import UserNavbar from './UserNavbar/UserNavbar';
 import Features from './Features/Features';

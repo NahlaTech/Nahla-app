@@ -99,12 +99,6 @@ import { NavLink, Link } from 'react-router-dom';
 import { Button } from 'primereact/button';
 import { Menubar } from 'primereact/menubar';
 import './UserNavbar.css';
-// import { Sidebar } from 'primereact/sidebar';
-// import { Menu } from 'primereact/menu';
-// import { Bars3Icon } from '@heroicons/react/24/outline';
-// import HeroSection from '../HeroSection';
-// import Features from './Features';
-// import Pricing from '../Pricing';
 
 export default function UserNavbar({ heroRef, featuresRef, pricingRef }) {
   const { t } = useTranslation();
@@ -113,6 +107,7 @@ export default function UserNavbar({ heroRef, featuresRef, pricingRef }) {
   // Scroll to section function
   const scrollToSection = ref => {
     ref.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    console.log(ref.current);
     // setVisible(false); // Close sidebar after clicking a link
   };
 

@@ -14,3 +14,6 @@ body {
   overflow: hidden;
   height: 100vh;
 }
+.bg-primary:hover {
+  background-color: rgba(25, 73, 115, 0.97) !important;
+}

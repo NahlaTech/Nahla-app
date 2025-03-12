@@ -62,7 +62,7 @@ const Pricing = () => {
                 <hr className="mb-3 mx-0 border-top-1 border-bottom-none border-300 mt-auto" />
                 <Button
                   label={t('landing.startNow')}
-                  className="p-3 w-full mt-auto"
+                  className="p-3 w-full mt-auto border-0  bg-primary"
                 />
               </div>
             </div>
@@ -114,7 +114,7 @@ const Pricing = () => {
                 <hr className="mb-3 mx-0 border-top-1 border-bottom-none border-300 mt-auto" />
                 <Button
                   label={t('landing.startNow')}
-                  className="p-3 w-full mt-auto"
+                  className="p-3 w-full mt-auto  border-0 bg-primary"
                 />
               </div>
             </div>
@@ -166,7 +166,7 @@ const Pricing = () => {
                 <hr className="mb-3 mx-0 border-top-1 border-bottom-none border-300 mt-auto" />
                 <Button
                   label={t('landing.startNow')}
-                  className="p-3 w-full p-button-outlined"
+                  className="p-3 w-full p-button-outlined text-primary"
                 />
               </div>
             </div>

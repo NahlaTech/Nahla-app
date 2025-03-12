@@ -10,8 +10,8 @@ const Features = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="grid mt-8">
-        <div className="sm:col-12 md:col-6 md:col-offset-1">
+      <div className="grid mt-5 md:mt-8">
+        <div className="col-12 md:col-6 md:col-offset-1">
           <h3 className="text-4xl text-blackBold m-0">
             {t('landing.firstFeaturesTitle')} {t('landing.featuresWord')}
           </h3>
@@ -40,13 +40,13 @@ const Features = () => {
             {t('landing.thirdFeaturesParagraph')}
           </p>
         </div>
-        <div className=" pl-0 sm:hidden md:block md:col-4 md:flex md:align-items-center lg:col-5">
+        <div className=" pl-0 hidden md:block md:col-4 md:flex md:align-items-center lg:col-5">
           <img className="w-full pl-0" src={featureimg1} alt="Features Image" />
         </div>
       </div>
 
-      <div className="mt-8 grid h-30rem">
-        <div className="sm:hidden md:block md:col-4 md:flex md:align-items-center md:col-offset-1 lg:col-5">
+      <div className="mt-5 md:mt-8 grid h-30rem">
+        <div className="hidden md:block md:col-4 md:flex md:align-items-center md:col-offset-1 lg:col-5">
           <img className="w-full" src={featureimg2} />
         </div>
         <div className="sm:col-12 md:col-6">
