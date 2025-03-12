@@ -9,10 +9,13 @@ body {
 #root {
   width: 100%;
   max-width: 100vw; /* Ensures the width never exceeds the viewport width */
-  padding: 20px;
   box-sizing: border-box;
   overflow: hidden;
   height: 100vh;
+}
+
+.sectionPadding {
+  padding: 20px;
 }
 .bg-primary:hover {
   background-color: rgba(25, 73, 115, 0.97) !important;

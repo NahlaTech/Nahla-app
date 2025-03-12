@@ -12,7 +12,7 @@ export default function HeroSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="mb-8 mt-7">
+    <section className="mb-8 mt-7 sectionPadding  md:px-7">
       <div className="md:flex">
         <div className="mt-5 sm:pl-0 md:pl-8 md:w-12">
           <h2 className="text-5xl text-blackBold m-0">

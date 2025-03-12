@@ -411,6 +411,14 @@
     "thirdPricingSectionThreePoint": "100 جيجابايت من التخزين السحابي",
     "fourPricingSectionThreePoint": "دعم حتى 500 عضو بالفريق",
     "monthly": "شهرياً",
-    "startNow": " ابدأ الآن"
+    "startNow": " ابدأ الآن",
+
+    "contactTitle": "هل تحتاج إلى المساعدة؟",
+    "contactTitleTwo": "اتصل بنا",
+    "contactDesc": "إذا كان لديك أي استفسارات أو تحتاج إلى دعم، فإن فريقنا المخصص مستعد لمساعدتك وتقديم أفضل الحلول لك.",
+    "joinNow": "راسلنا على info@nahlare.com",
+
+    "footerDesc": " جميع الحقوق محفوظة لشركة",
+    "footerWord": "نحلة"
   }
 }

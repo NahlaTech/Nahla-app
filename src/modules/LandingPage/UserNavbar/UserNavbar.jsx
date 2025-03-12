@@ -100,7 +100,12 @@ import { Button } from 'primereact/button';
 import { Menubar } from 'primereact/menubar';
 import './UserNavbar.css';
 
-export default function UserNavbar({ heroRef, featuresRef, pricingRef }) {
+export default function UserNavbar({
+  heroRef,
+  featuresRef,
+  pricingRef,
+  contactRef,
+}) {
   const { t } = useTranslation();
   const [visible, setVisible] = useState(false);
 
@@ -148,7 +153,7 @@ export default function UserNavbar({ heroRef, featuresRef, pricingRef }) {
   return (
     <>
       {/* Desktop Navbar */}
-      <div className="w-full ">
+      <div className="w-full sectionPadding md:px-7 ">
         <Menubar
           className=" md:flex justify-content-between bg-white border-0 p-0 sm:text-base md:text-base lg:text-xs xl:text-lg"
           model={items}
