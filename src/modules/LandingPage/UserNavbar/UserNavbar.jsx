@@ -135,7 +135,7 @@ export default function UserNavbar({ heroRef, featuresRef, pricingRef }) {
 
   const end = (
     <div className="hidden md:flex  gap-3">
-      {/* <Link to="/">
+      <Link to="/">
         <Button
           label={t('login')}
           className="p-button-secondary bg-primary border-primary px-5"
@@ -146,7 +146,7 @@ export default function UserNavbar({ heroRef, featuresRef, pricingRef }) {
           label={t('createAccount')}
           className="p-button-secondary border-primary bg-white text-primary px-5"
         />
-      </Link> */}
+      </Link>
     </div>
   );
 
