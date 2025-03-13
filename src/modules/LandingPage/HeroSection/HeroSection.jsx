@@ -12,7 +12,7 @@ export default function HeroSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="mb-8 mt-7 sectionPadding  md:px-7">
+    <section className="mt-5 md:mt-7 sectionPadding  md:px-7 pb-0">
       <div className="md:flex">
         <div className="mt-5 sm:pl-0 md:pl-8 md:w-12">
           <h2 className="text-5xl text-blackBold m-0">
@@ -37,7 +37,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="cards-container">
+      <div className="cards-container mb-0">
         <h2 className="text-3xl text-blackBold m-0 text-center">
           {t('landing.cardsTitle')}
         </h2>

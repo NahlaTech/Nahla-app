@@ -5,6 +5,7 @@ import UserNavbar from './UserNavbar/UserNavbar';
 import Features from './Features/Features';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
+import About from './About/About';
 
 export default function LandingPage() {
   // Create refs for each section
@@ -12,6 +13,7 @@ export default function LandingPage() {
   const featuresRef = useRef(null);
   const pricingRef = useRef(null);
   const contactRef = useRef(null);
+  const aboutRef = useRef(null);
   return (
     <>
       {/* Pass refs to Navbar */}
@@ -20,6 +22,7 @@ export default function LandingPage() {
         featuresRef={featuresRef}
         pricingRef={pricingRef}
         contactRef={contactRef}
+        aboutRef={aboutRef}
       />
 
       {/* Assign refs to the corresponding sections */}
@@ -31,6 +34,9 @@ export default function LandingPage() {
       </div>
       <div ref={pricingRef}>
         <Pricing />
+      </div>
+      <div ref={aboutRef}>
+        <About />
       </div>
       <div ref={contactRef}>
         <Contact />

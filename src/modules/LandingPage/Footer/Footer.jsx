@@ -5,9 +5,9 @@ const Footer = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="bg-white p-3 flex justify-content-between lg:justify-content-center align-items-center flex-wrap">
+      <div className="surface-200 p-3 flex justify-content-center  align-items-center flex-wrap">
         {/* <div className="font-bold mr-8">🔥 Hot Deals!</div> */}
-        <div className="align-items-center hidden lg:flex text-lg">
+        <div className="flex  justify-content-center align-items-center text-lg">
           <span className=" text-500">
             {' '}
             &copy; 2025

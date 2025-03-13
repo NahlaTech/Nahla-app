@@ -105,9 +105,10 @@ export default function UserNavbar({
   featuresRef,
   pricingRef,
   contactRef,
+  aboutRef,
 }) {
   const { t } = useTranslation();
-  const [visible, setVisible] = useState(false);
+  // const [visible, setVisible] = useState(false);
 
   // Scroll to section function
   const scrollToSection = ref => {

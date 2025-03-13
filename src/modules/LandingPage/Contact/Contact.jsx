@@ -8,7 +8,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className={`${Style.bgSection} p-7 mt-5 md:mt-8`}>
+      <div className={`${Style.bgSection} pb-7 mt-5 md:mt-7`}>
         <div className="text-700 text-center ">
           <div className="text-blue-600 font-bold mb-3 text-primary">
             {/* <i className="pi pi-discord"></i>&nbsp;POWERED BY DISCORD */}
@@ -20,11 +20,11 @@ const Contact = () => {
           <div className="text-500 text-2xl mb-5 py-3">
             {t('landing.contactDesc')}
           </div>
-          <a href="mailto:hlaelgibaly22@gmail.com">
+          <a href="mailto:info@nahlare.com">
             <Button
               label={t('landing.joinNow')}
               //   icon="pi pi-discord"
-              className="font-bold px-5 py-3 p-button-raised p-button-rounded white-space-nowrap bg-primary"
+              className="font-bold px-2 py-3 md:px-4 p-button-raised p-button-rounded white-space-nowrap bg-primary"
             />
           </a>
         </div>

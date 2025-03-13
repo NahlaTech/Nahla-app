@@ -6,7 +6,7 @@ const Pricing = () => {
   const { t } = useTranslation();
   return (
     <>
-      <div className="surface-0 sectionPadding md:px-7">
+      <div className="surface-0 sectionPadding mt-5 md:mt-7 md:px-7 pt-0 pb-0">
         <div className="text-900 font-bold text-6xl mb-4 text-center">
           {/* pricingTitle */}
           {t('landing.pricingTitle')}
