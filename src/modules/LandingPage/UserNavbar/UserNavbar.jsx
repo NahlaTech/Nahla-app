@@ -142,7 +142,7 @@ export default function UserNavbar({
           className="p-button-secondary bg-primary border-primary px-5"
         />
       </Link>
-      <Link to="/">
+      <Link to="/signup">
         <Button
           label={t('createAccount')}
           className="p-button-secondary border-primary bg-white text-primary px-5"
