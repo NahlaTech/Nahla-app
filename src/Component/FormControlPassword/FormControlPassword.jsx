@@ -1,19 +1,19 @@
 import React from 'react';
-import prototype from 'prop-types';
+import Prototype from 'prop-types';
 import { classNames } from 'primereact/utils';
 import { useField } from 'formik';
 import { InputText } from 'primereact/inputtext';
 import './FormControlPassword.css';
 
 const FormControlPassword = props => {
-  const { id, lable, name, className, ...otherProps } = props;
+  const { id, label, name, className, ...otherProps } = props;
   const [field, meta] = useField(name);
   const fieldInvalid = meta.touched && meta.error;
   const error = fieldInvalid && meta.error;
   return (
     <>
-      <div className={className}>
-        {lable && (
+      <div className={` ${className}`}>
+        {label && (
           <lable className="inputLable" htmlFor={id}>
             {label}
           </lable>
@@ -22,7 +22,7 @@ const FormControlPassword = props => {
           id={id}
           {...field}
           {...otherProps}
-          className={`w-full mt-2 ${fieldInvalid ? 'p-invalid' : ''}`}
+          className={`w-full mt-2 mb-2 ${fieldInvalid ? 'p-invalid' : ''}`}
         />
         {error && <span className="p-error error">{error}</span>}
       </div>
@@ -31,11 +31,11 @@ const FormControlPassword = props => {
 };
 
 FormControlPassword.prototype = {
-  lable: prototype.string,
-  className: prototype.string,
-  placeholder: prototype.string,
-  id: prototype.string,
-  name: prototype.string.isRequired,
+  lable: Prototype.string,
+  className: Prototype.string,
+  placeholder: Prototype.string,
+  id: Prototype.string,
+  name: Prototype.string.isRequired,
 };
 
 export default FormControlPassword;

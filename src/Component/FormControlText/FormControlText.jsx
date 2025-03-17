@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { useField } from 'formik';
 import { InputText } from 'primereact/inputtext';
 import './FormControlText.css';
@@ -30,10 +30,10 @@ const FormControlText = props => {
 };
 
 FormControlText.propTypes = {
-  label: propTypes.string,
-  className: propTypes.string,
-  placeholder: propTypes.string,
-  id: propTypes.string,
-  name: propTypes.string.isRequired,
+  label: PropTypes.string,
+  className: PropTypes.string,
+  placeholder: PropTypes.string,
+  id: PropTypes.string,
+  name: PropTypes.string.isRequired,
 };
 export default FormControlText;
