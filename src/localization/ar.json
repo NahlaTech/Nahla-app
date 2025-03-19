@@ -31,6 +31,8 @@
   "selectTimeZoneMin": "الحد الأدنى لطول المنطقة الزمنية ٣ أحرف",
   "selectTimeZoneMax": "الحد الأقصى لطول المنطقة الزمنية ١٥ حرفًا",
   "selectTimeZoneRequird": "المنطقة الزمنية مطلوبة",
+  "loginJoinWithUs": "سجل معنا!",
+  "signupJoinWithUs": "انشئ حساب معنا!",
 
   "confirmPassword": "تأكيد كلمة المرور",
   "haveAccount": "بالفعل لديك حساب؟",

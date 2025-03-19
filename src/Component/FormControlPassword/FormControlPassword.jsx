@@ -24,7 +24,7 @@ const FormControlPassword = props => {
           {...otherProps}
           className={`w-full mt-2 mb-2 ${fieldInvalid ? 'p-invalid' : ''}`}
         />
-        {error && <span className="p-error error">{error}</span>}
+        {error && <span className="p-error mb-0 error">{error}</span>}
       </div>
     </>
   );

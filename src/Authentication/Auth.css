@@ -1,7 +1,11 @@
 .authContainer {
   height: 100vh;
+  overflow: auto;
+  direction: ltr;
 }
-
+.dir {
+  direction: rtl;
+}
 .signupLink {
   width: 100%;
   text-align: center;
@@ -18,13 +22,13 @@
 
 .imgParent {
   position: relative;
-  background-image: url('../assets/auth.jpg');
+  background-image: url('../assets/auth6.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.imgParent::before {
-  content: 'سجل معانا !';
+.imgParent p {
+  /* content: 'سجل معانا !'; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -32,8 +36,9 @@
   z-index: 10;
   /* color: rgb(25, 73, 115); */
   color: #fff;
+  margin: 0;
   font-weight: 900;
-  font-size: 5vw;
+  font-size: 3vw;
 }
 .imgParent::after {
   content: '';

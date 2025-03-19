@@ -61,7 +61,7 @@ const SignUp = () => {
     <>
       <div className="authContainer flex flex-columnn align-items-center justify-content-center">
         {/* <div className=""> */}
-        <div className="px-3 md:px-4 lg:px-6 md:w-10 h-full ">
+        <div className="px-3 md:px-4 lg:px-6 md:w-10 h-auto dir ">
           <h1 className="text-center text-primary font-bold text-5xl m-0 mb-4 mt-4">
             {t('logoTitle')}
           </h1>

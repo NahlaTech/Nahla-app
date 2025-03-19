@@ -26,61 +26,63 @@ const Login = () => {
   });
   return (
     <>
-      <div className="authContainer flex flex-columnn align-items-center justify-content-center">
-        <div className="w-10 h-full  md:px-4 lg:px-6">
-          <h1 className="text-center text-primary font-bold text-5xl m-0 mb-4 mt-4">
-            {t('logoTitle')}
-          </h1>
-          <h2 className="m-0">{t('login')}</h2>
-          <Formik
-            initialValues={initialValues}
-            validationSchema={validationSchema}
-            onSubmit={(values, actions) => {
-              alert('Register successfully');
-              actions.setSubmitting(false);
-            }}
-          >
-            <Form className="mt-5">
-              <FormControlText
-                id="email"
-                name="email"
-                label={t('email')}
-                placeholder={t('emailPalceholder')}
-                className="mb-4"
-              />
-              <FormControlPassword
-                id="password"
-                name="password"
-                label={t('password')}
-                placeholder={t('passwordPlaceholder')}
-                className="mb-4"
-              />
+      <div className="authContainer h-screen dir">
+        <h1 className="text-center text-primary font-bold text-5xl m-0 mb-4 mt-4">
+          {t('logoTitle')}
+        </h1>
+        <div className="w-full md:px-4 lg:px-6  flex flex-column justify-content-center align-items-center">
+          <div className="w-full ">
+            <Formik
+              initialValues={initialValues}
+              validationSchema={validationSchema}
+              onSubmit={(values, actions) => {
+                alert('Register successfully');
+                actions.setSubmitting(false);
+              }}
+            >
+              <Form className=" w-full">
+                <h2 className="m-0 text-center">{t('login')}</h2>
+                <FormControlText
+                  id="email"
+                  name="email"
+                  label={t('email')}
+                  placeholder={t('emailPalceholder')}
+                  className="mb-4"
+                />
+                <FormControlPassword
+                  id="password"
+                  name="password"
+                  label={t('password')}
+                  placeholder={t('passwordPlaceholder')}
+                  className="mb-4"
+                />
 
-              <div className="flex justify-content-between">
-                <div>
-                  <FormControlCheckbox
-                    id="rememberMe"
-                    name="rememberMe"
-                    label={t('rememberMe')}
-                  />
+                <div className="flex justify-content-between">
+                  <div>
+                    <FormControlCheckbox
+                      id="rememberMe"
+                      name="rememberMe"
+                      label={t('rememberMe')}
+                    />
+                  </div>
+                  <div className="font-light">{t('forgotPassword')}</div>
                 </div>
-                <div className="font-light">{t('forgotPassword')}</div>
-              </div>
 
-              <Button
-                className="bg-primary w-full mt-4 border-none"
-                label={t('login')}
-                type="submit"
-                // loading={isLoading}
-              ></Button>
+                <Button
+                  className="bg-primary w-full mt-4 border-none"
+                  label={t('login')}
+                  type="submit"
+                  // loading={isLoading}
+                ></Button>
 
-              <div className="text-center mt-3">
-                <Link className="signupLink" to="/auth/signup">
-                  {t('noAccount')} <span>{t('register')}</span>
-                </Link>
-              </div>
-            </Form>
-          </Formik>
+                <div className="text-center mt-3">
+                  <Link className="signupLink" to="/auth/signup">
+                    {t('noAccount')} <span>{t('register')}</span>
+                  </Link>
+                </div>
+              </Form>
+            </Formik>
+          </div>
         </div>
       </div>
     </>

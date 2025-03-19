@@ -23,7 +23,7 @@ const FormControlText = props => {
           {...otherProps}
           className={`w-full mt-2 ${fieldInvalid ? 'p-invalid' : ''}`}
         />
-        {error && <p className="p-error error">{error}</p>}
+        {error && <p className="p-error  mb-0 error">{error}</p>}
       </div>
     </>
   );
