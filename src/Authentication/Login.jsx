@@ -1,5 +1,5 @@
 import React from 'react';
-import './Login.css';
+import './Auth.css';
 import { useTranslation } from 'react-i18next';
 import { Form, Formik } from 'formik';
 import * as Yup from 'yup';
@@ -10,25 +10,31 @@ import { Button } from 'primereact/button';
 import { Link } from 'react-router';
 const Login = () => {
   const { t } = useTranslation();
+
+  const initialValues = { email: '', password: '' };
+
+  const validationSchema = Yup.object({
+    email: Yup.string()
+      .trim()
+      .email(t('emailInvalid'))
+      .required(t('emailRequired')),
+
+    password: Yup.string()
+      .trim()
+      .matches(/^[a-zA-Zأ-ي0-9]{5,}$/, t('passwordInvalid'))
+      .required(t('passwordRequird')),
+  });
   return (
     <>
-      <div className="authContainer">
-        <div className="w-full loginForm p-6">
-          <h1 className="text-center textPrimaryColor">{t('logoTitle')}</h1>
-          <h2>{t('login')}</h2>
+      <div className="authContainer flex flex-columnn align-items-center justify-content-center">
+        <div className="w-10 h-full  md:px-4 lg:px-6">
+          <h1 className="text-center text-primary font-bold text-5xl m-0 mb-4 mt-4">
+            {t('logoTitle')}
+          </h1>
+          <h2 className="m-0">{t('login')}</h2>
           <Formik
-            initialValues={{ email: '', password: '' }}
-            validationSchema={Yup.object({
-              email: Yup.string()
-                .trim()
-                .email(t('emailInvalid'))
-                .required(t('emailRequired')),
-
-              password: Yup.string()
-                .trim()
-                .matches(/^[a-zA-Zأ-ي0-9]{5,}$/, t('passwordInvalid'))
-                .required(t('passwordRequird')),
-            })}
+            initialValues={initialValues}
+            validationSchema={validationSchema}
             onSubmit={(values, actions) => {
               alert('Register successfully');
               actions.setSubmitting(false);

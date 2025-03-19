@@ -7,7 +7,7 @@ import FormControlText from '../Component/FormControlText/FormControlText';
 import FormControlPassword from '../Component/FormControlPassword/FormControlPassword';
 import FormControlCheckbox from '../Component/FormControlCheckbox/FormControlCheckbox';
 import { Link } from 'react-router';
-import './Login.css';
+import './Auth.css';
 const SignUp = () => {
   const { t } = useTranslation();
 
@@ -21,17 +21,16 @@ const SignUp = () => {
   };
 
   let regexPhone = /^(?:\+966|0)?5[0-9]{8}$/;
-  // /^(?:\+?(\d{1,3}))?[-.\s]?(\(?\d{3}\)?)?[-.\s]?(\d{3})[-.\s]?(\d{4})$/;
 
   const validationSchema = Yup.object({
     firstname: Yup.string()
       .trim()
-      .min(3, t('firstNameMin'))
+      .min(2, t('firstNameMin'))
       .max(15, t('firstNameMax'))
       .required(t('firstNameRequird')),
     secondname: Yup.string()
       .trim()
-      .min(3, t('secondNameMin'))
+      .min(2, t('secondNameMin'))
       .max(15, t('secondNameMax'))
       .required(t('secondNameRequird')),
     phone: Yup.string()
@@ -40,7 +39,7 @@ const SignUp = () => {
       .required(t('phoneRequird')),
     zone: Yup.string()
       .trim()
-      .min(5, t('selectTimeZoneMin'))
+      .min(3, t('selectTimeZoneMin'))
       .max(15, t('selectTimeZoneMax'))
       .required(t('selectTimeZoneRequird')),
     email: Yup.string()
@@ -60,86 +59,90 @@ const SignUp = () => {
 
   return (
     <>
-      <div className="authContainer">
-        <div className="scroll">
-          <div className="w-full loginForm p-6">
-            <h1 className="text-center textPrimaryColor">{t('logoTitle')}</h1>
-            <h2>{t('register')}</h2>
-            <Formik
-              initialValues={initialValues}
-              validationSchema={validationSchema}
-              onSubmit={(values, actions) => {
-                alert('Register successfully');
-                actions.setSubmitting(false);
-              }}
-            >
-              <Form className="mt-5">
-                <div className="grid">
-                  <FormControlText
-                    id="firstname"
-                    name="firstname"
-                    label={t('firstName')}
-                    placeholder={t('firstNamePlaceholder')}
-                    className="mb-4 col-6"
-                  />
-                  <FormControlText
-                    id="secondname"
-                    name="secondname"
-                    label={t('secondName')}
-                    placeholder={t('secondNamePlaceholder')}
-                    className="mb-4 col-6"
-                  />
-                </div>
-                <div className="grid">
-                  <FormControlText
-                    id="phone"
-                    name="phone"
-                    label={t('phone')}
-                    placeholder="xx-xxx-xxx (+966)"
-                    className="mb-4 col-6"
-                  />
-
-                  <FormControlText
-                    id="zone"
-                    name="zone"
-                    label={t('selectTimeZone')}
-                    placeholder={t('selectTimeZonePlaceholder')}
-                    className="mb-4 col-6"
-                  />
-                </div>
+      <div className="authContainer flex flex-columnn align-items-center justify-content-center">
+        {/* <div className=""> */}
+        <div className="px-3 md:px-4 lg:px-6 md:w-10 h-full ">
+          <h1 className="text-center text-primary font-bold text-5xl m-0 mb-4 mt-4">
+            {t('logoTitle')}
+          </h1>
+          {/* <div className=""> */}
+          <h2 className="m-0">{t('register')}</h2>
+          <Formik
+            initialValues={initialValues}
+            validationSchema={validationSchema}
+            onSubmit={(values, actions) => {
+              alert('Register successfully');
+              actions.setSubmitting(false);
+            }}
+          >
+            <Form className="mt-4">
+              <div className="grid">
+                <FormControlText
+                  id="firstname"
+                  name="firstname"
+                  label={t('firstName')}
+                  placeholder={t('firstNamePlaceholder')}
+                  className="mb-4 col-6"
+                />
+                <FormControlText
+                  id="secondname"
+                  name="secondname"
+                  label={t('secondName')}
+                  placeholder={t('secondNamePlaceholder')}
+                  className="mb-4 col-6"
+                />
+              </div>
+              <div className="grid">
+                <FormControlText
+                  id="phone"
+                  name="phone"
+                  label={t('phone')}
+                  placeholder="xx-xxx-xxx (+966)"
+                  className="mb-4 col-6"
+                />
 
                 <FormControlText
-                  id="email"
-                  name="email"
-                  label={t('email')}
-                  placeholder={t('emailPalceholder')}
-                  className="mb-4"
+                  id="zone"
+                  name="zone"
+                  label={t('selectTimeZone')}
+                  placeholder={t('selectTimeZonePlaceholder')}
+                  className="mb-4 col-6"
                 />
+              </div>
 
-                <FormControlPassword
-                  id="password"
-                  name="password"
-                  label={t('password')}
-                  placeholder={t('passwordPlaceholder')}
-                  className="mb-4"
-                />
+              <FormControlText
+                id="email"
+                name="email"
+                label={t('email')}
+                placeholder={t('emailPalceholder')}
+                className="mb-4"
+              />
 
-                <Button
-                  className="bg-primary w-full mt-4 border-none"
-                  label={t('createAccount')}
-                  type="submit"
-                  // loading={isLoading}
-                ></Button>
+              <FormControlPassword
+                id="password"
+                name="password"
+                label={t('password')}
+                placeholder={t('passwordPlaceholder')}
+                className="mb-4"
+              />
 
-                <div className="text-center mt-3">
-                  <Link className="signupLink" to="/auth">
-                    {t('haveAccount')} <span>{t('login')}</span>
-                  </Link>
-                </div>
-              </Form>
-            </Formik>
-          </div>
+              <Button
+                className="bg-primary w-full mt-4  border-none"
+                label={t('createAccount')}
+                type="submit"
+                // loading={isLoading}
+              ></Button>
+
+              <div className="text-center mt-3">
+                <Link className="signupLink" to="/auth">
+                  {t('haveAccount')} <span>{t('login')}</span>
+                </Link>
+              </div>
+            </Form>
+          </Formik>
+          {/* </div> */}
         </div>
+        {/* </div> */}
       </div>
     </>
   );
