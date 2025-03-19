@@ -8,44 +8,45 @@ jobs:
   build:
     runs-on: self-hosted
 
-
     strategy:
       matrix:
         node-version: [18.x]
 
     steps:
-    # Checkout the code
-    - uses: actions/checkout@v3
-    
-    # Set up Node.js with the correct version and cache
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    
-    # Clear npm cache and install dependencies
-    - run: |
-        npm cache clean --force
-        npm ci --force
-    
-    # Remove old files from the deployment directory
-    - name: Remove old build
-      run: rm -rf /var/www/wavyinext/*
-    
-    # Copy all necessary files to the deployment directory
-    - name: Copy project files to /var/www/nahlaapp
-      run: |
-        cp -R . /var/www/wavyinext
-    
-    # Navigate to /var/www/wavyinext and run npm build there
-    - name: Run build in /var/www/nahlaapp
-      run: |
-        cd /var/www/nahlaapp
-        npm ci --force
-        npm run build
-        
-  # Check the status of the Next.js service
-    - name: Check Next.js service status
-      run: |
-        sudo systemctl restart nextjs.service
+      # Checkout the code
+      - uses: actions/checkout@v3
+
+      # Set up Node.js with the correct version and cache
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      # Clear npm cache and install dependencies
+      - run: |
+          npm cache clean --force
+          npm ci --force
+
+      # Remove old files from the deployment directory
+      - name: Remove old build
+        run: rm -rf /var/www/nahlaapp/*
+
+      # Create the deployment directory if it doesn't exist
+      - name: Create deployment directory if not exists
+        run: mkdir -p /var/www/nahlaapp
+
+      # Copy all necessary files to the deployment directory
+      - name: Copy project files to /var/www/nahlaapp
+        run: cp -R . /var/www/nahlaapp
+
+      # Navigate to /var/www/nahlaapp and run npm build there
+      - name: Run build in /var/www/nahlaapp
+        run: |
+          cd /var/www/nahlaapp
+          npm ci --force
+          npm run build
+
+      # Check the status of the Next.js service
+      - name: Check Next.js service status
+        run: sudo systemctl restart nextjs.service
