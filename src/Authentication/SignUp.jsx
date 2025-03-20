@@ -59,12 +59,13 @@ const SignUp = () => {
 
   return (
     <>
-      <div className="authContainer flex flex-columnn align-items-center justify-content-center">
+      <div className="authContainer flex flex-column align-items-center justify-content-center">
         {/* <div className=""> */}
-        <div className="px-3 md:px-4 lg:px-6 md:w-10 h-auto dir ">
+        <div className="px-3 md:px-4 lg:px-6 md:w-10 ">
           <h1 className="text-center text-primary font-bold text-5xl m-0 mb-4 mt-4">
             {t('logoTitle')}
           </h1>
+
           {/* <div className=""> */}
           <h2 className="m-0">{t('register')}</h2>
           <Formik
