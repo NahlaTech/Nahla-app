@@ -26,11 +26,11 @@ const Login = () => {
   });
   return (
     <>
-      <div className="authContainer h-screen dir">
+      <div className="authContainer flex flex-column align-items-center justify-content-start">
         <h1 className="text-center text-primary font-bold text-5xl m-0 mb-4 mt-4">
           {t('logoTitle')}
         </h1>
-        <div className="w-full md:px-4 lg:px-6  flex flex-column justify-content-center align-items-center">
+        <div className="py-0 px-3 md:px-4 lg:px-6 md:w-10   ">
           <div className="w-full ">
             <Formik
               initialValues={initialValues}
