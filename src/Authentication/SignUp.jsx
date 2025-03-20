@@ -65,6 +65,7 @@ const SignUp = () => {
           <h1 className="text-center text-primary font-bold text-5xl m-0 mb-4 mt-4">
             {t('logoTitle')}
           </h1>
+
           {/* <div className=""> */}
           <h2 className="m-0">{t('register')}</h2>
           <Formik
